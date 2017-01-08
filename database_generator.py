@@ -20,7 +20,14 @@ def name_generator(size=6, chars=string.ascii_uppercase):   # generate name
 
 f = open('people', 'w+')
 for i in range(0, 100000000):
-
+    f.write(i)
+    f.write(' ')
+    f.write(name_generator)
+    f.write(' ')
+    f.write(i)
+    f.write('\n')
+f.close()
+'''
     found = False
     tmp = id_generator()
     for line in f:      # generate a unique id
@@ -41,3 +48,5 @@ for i in range(0, 100000000):
             f.write(tmp)
         f.write('\n')
 f.close()
+'''
+
